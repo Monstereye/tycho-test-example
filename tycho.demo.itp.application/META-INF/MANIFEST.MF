@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Eclipse-ExtensibleAPI: true
+Bundle-ManifestVersion: 2
+Bundle-Name: Itp Plug-in
+Bundle-SymbolicName: tycho.demo.itp.application;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Require-Bundle: org.eclipse.core.runtime,
+ org.eclipse.ui,
+ org.eclipse.ui.ide,
+ org.eclipse.jface
+Bundle-RequiredExecutionEnvironment: JavaSE-11
+Export-Package: tycho.demo.itp,
+ tycho.demo.itp01.actions;x-friends:="tycho.demo.itp.tests"
+Automatic-Module-Name: tycho.demo.itp.application

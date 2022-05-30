@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>tycho.demo.itp</groupId>
+  <artifactId>parent</artifactId>
+  <version>1.0.0-SNAPSHOT</version>
+  <packaging>pom</packaging>
+  
+  <modules>
+    <module>tycho.demo.itp.application</module>
+    <module>tycho.demo.itp.application.test</module>
+    <module>tycho.demo.itp.tests</module>
+    <module>tycho.demo.itp02</module>
+    <module>tycho.demo.itp02.test</module>
+ 	<module>tycho.demo.itp.target</module> 
+ 	<module>tycho.demo.itp.feature.test</module>
+  </modules>
+
+
+  <properties>
+		<maven.compiler.release>11</maven.compiler.release>
+		<project.build.sourceEncoding>Cp1252</project.build.sourceEncoding>
+		<maven.deploy.skip>true</maven.deploy.skip>
+	    <tycho-version>2.7.3</tycho-version>
+  </properties>
+
+<!--  <repositories>
+   <repository>
+     <id>2022-06</id>
+     <layout>p2</layout>
+     <url>https://download.eclipse.org/releases/2022-06</url>
+   </repository>
+  </repositories>
+-->
+  <build>
+    <plugins> 
+    	<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>target-platform-configuration</artifactId>
+				 <version>${tycho-version}</version>
+				<configuration>
+					<target>
+						<artifact>
+							<groupId>tycho.demo.itp</groupId>
+							<artifactId>domain.tp.generated</artifactId>
+							<version>1.0.0-SNAPSHOT</version>
+						</artifact>
+					</target>
+					<!-- This is where we mention all platforms available for the build.
+						The platform(s) for our individual products (ppdfw, tuning, devicedb,...)
+						are set in their individual products' poms. This way is also mentioned here:
+						https://stackoverflow.com/questions/28547378/maven-tycho-use-multiple-environments-win32-linux-during-test-but-only-build -->
+					<environments>
+						<environment>
+							<os>linux</os>
+							<ws>gtk</ws>
+							<arch>x86_64</arch>
+						</environment>
+						<environment>
+							<os>win32</os>
+							<ws>win32</ws>
+							<arch>x86_64</arch>
+						</environment>
+					</environments>
+				</configuration>
+			</plugin>
+ 
+    	<plugin>
+              <groupId>org.eclipse.tycho</groupId>
+              <artifactId>tycho-compiler-plugin</artifactId>
+              <version>${tycho-version}</version>
+            <configuration>
+                <compilerArgument>-warn:none</compilerArgument>     
+                <compilerArgument>-err:none</compilerArgument>      
+            </configuration>
+      	</plugin>
+      	<plugin>
+        	<groupId>org.eclipse.tycho</groupId>
+        	<artifactId>tycho-maven-plugin</artifactId>
+        	<version>${tycho-version}</version>
+        	<extensions>true</extensions>
+      	</plugin>
+    </plugins>
+  </build>
+
+</project>

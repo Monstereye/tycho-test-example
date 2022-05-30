@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Test2
+Bundle-SymbolicName: tycho.demo.itp02.test
+Bundle-Version: 1.0.0.qualifier
+Automatic-Module-Name: tycho.demo.itp01.test1
+Bundle-RequiredExecutionEnvironment: JavaSE-11
+Require-Bundle: org.junit
+Export-Package: tycho.demo.itp01.test2
+Fragment-Host: tycho.demo.itp02
+Automatic-Module-Name: tycho.demo.itp02.test

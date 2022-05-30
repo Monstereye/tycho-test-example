@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Eclipse-ExtensibleAPI: true
+Bundle-ManifestVersion: 2
+Bundle-Name: Itp02
+Bundle-SymbolicName: tycho.demo.itp02
+Bundle-Version: 1.0.0.qualifier
+Automatic-Module-Name: tycho.demo.itp02
+Bundle-RequiredExecutionEnvironment: JavaSE-11
+Automatic-Module-Name: tycho.demo.itp02
+Export-Package: tycho.demo.itp02

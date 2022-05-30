@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="tycho.demo.itp.feature.test"
+      label="Test Feature"
+      version="1.0.0.202205301907">
+
+   <description url="http://www.example.com/description">
+      [Enter Feature Description here.]
+   </description>
+
+   <copyright url="http://www.example.com/copyright">
+      [Enter Copyright Description here.]
+   </copyright>
+
+   <license url="http://www.example.com/license">
+      [Enter License Description here.]
+   </license>
+
+   <plugin
+         id="tycho.demo.itp02"
+         download-size="2"
+         install-size="1"
+         version="1.0.0.202205301907"
+         unpack="false"/>
+
+   <plugin
+         id="tycho.demo.itp.application.test"
+         download-size="5"
+         install-size="31"
+         version="1.0.0.202205301907"
+         fragment="true"
+         unpack="false"/>
+
+   <plugin
+         id="tycho.demo.itp02.test"
+         download-size="5"
+         install-size="31"
+         version="1.0.0.202205301907"
+         fragment="true"
+         unpack="false"/>
+
+   <plugin
+         id="tycho.demo.itp.application"
+         download-size="9"
+         install-size="34"
+         version="1.0.0.202205301907"
+         unpack="false"/>
+
+</feature>
