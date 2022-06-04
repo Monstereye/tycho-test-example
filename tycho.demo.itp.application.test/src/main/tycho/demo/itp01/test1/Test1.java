@@ -15,12 +15,19 @@ package tycho.demo.itp01.test1;
 
 import org.junit.Assert;
 import org.junit.Test;
+import org.mockito.Mockito;
+
+import tycho.demo.itp.Application;
 
 public class Test1 {
 
     @Test
     public void sampleAction() {
-      Assert.assertTrue(true);
+      
+    	Application app = Mockito.mock(Application.class);
+     
+    	Assert.assertTrue(true);
+      
     }
 
 }

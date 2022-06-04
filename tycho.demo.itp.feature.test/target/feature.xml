@@ -2,7 +2,7 @@
 <feature
       id="tycho.demo.itp.feature.test"
       label="Test Feature"
-      version="1.0.0.202205301907">
+      version="1.0.0.202206040808">
 
    <description url="http://www.example.com/description">
       [Enter Feature Description here.]
@@ -20,14 +20,14 @@
          id="tycho.demo.itp02"
          download-size="2"
          install-size="1"
-         version="1.0.0.202205301907"
+         version="1.0.0.202206040808"
          unpack="false"/>
 
    <plugin
          id="tycho.demo.itp.application.test"
          download-size="5"
-         install-size="31"
-         version="1.0.0.202205301907"
+         install-size="33"
+         version="1.0.0.202206040808"
          fragment="true"
          unpack="false"/>
 
@@ -35,7 +35,7 @@
          id="tycho.demo.itp02.test"
          download-size="5"
          install-size="31"
-         version="1.0.0.202205301907"
+         version="1.0.0.202206040808"
          fragment="true"
          unpack="false"/>
 
@@ -43,7 +43,7 @@
          id="tycho.demo.itp.application"
          download-size="9"
          install-size="34"
-         version="1.0.0.202205301907"
+         version="1.0.0.202206040808"
          unpack="false"/>
 
 </feature>

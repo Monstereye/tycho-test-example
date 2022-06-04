@@ -47,6 +47,15 @@
 							<version>1.0.0-SNAPSHOT</version>
 						</artifact>
 					</target>
+					<dependency-resolution>
+	                    <extraRequirements>
+	                        <requirement>
+	                            <type>eclipse-plugin</type>
+	                            <id>org.mockito.mockito-core</id>
+	                            <versionRange>4.4.0</versionRange>
+	                        </requirement>
+	                    </extraRequirements>
+                	</dependency-resolution>
 					<!-- This is where we mention all platforms available for the build.
 						The platform(s) for our individual products (ppdfw, tuning, devicedb,...)
 						are set in their individual products' poms. This way is also mentioned here:

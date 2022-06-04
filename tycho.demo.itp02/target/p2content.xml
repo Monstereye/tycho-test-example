@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <units size='1'>
-  <unit id='tycho.demo.itp02' version='1.0.0.202205301907' singleton='false' generation='2'>
-    <update id='tycho.demo.itp02' range='[0.0.0,1.0.0.202205301907)' severity='0'/>
+  <unit id='tycho.demo.itp02' version='1.0.0.202206040808' singleton='false' generation='2'>
+    <update id='tycho.demo.itp02' range='[0.0.0,1.0.0.202206040808)' severity='0'/>
     <properties size='5'>
       <property name='org.eclipse.equinox.p2.name' value='Itp02'/>
       <property name='maven-groupId' value='tycho.demo.itp'/>
@@ -10,10 +10,10 @@
       <property name='maven-type' value='eclipse-plugin'/>
     </properties>
     <provides size='5'>
-      <provided namespace='org.eclipse.equinox.p2.iu' name='tycho.demo.itp02' version='1.0.0.202205301907'/>
-      <provided namespace='osgi.bundle' name='tycho.demo.itp02' version='1.0.0.202205301907'/>
+      <provided namespace='org.eclipse.equinox.p2.iu' name='tycho.demo.itp02' version='1.0.0.202206040808'/>
+      <provided namespace='osgi.bundle' name='tycho.demo.itp02' version='1.0.0.202206040808'/>
       <provided namespace='java.package' name='tycho.demo.itp02' version='0.0.0'/>
-      <provided namespace='osgi.identity' name='tycho.demo.itp02' version='1.0.0.202205301907'>
+      <provided namespace='osgi.identity' name='tycho.demo.itp02' version='1.0.0.202206040808'>
         <properties size='1'>
           <property name='type' value='osgi.bundle'/>
         </properties>
@@ -28,13 +28,13 @@
       </requiredProperties>
     </requires>
     <artifacts size='1'>
-      <artifact classifier='osgi.bundle' id='tycho.demo.itp02' version='1.0.0.202205301907'/>
+      <artifact classifier='osgi.bundle' id='tycho.demo.itp02' version='1.0.0.202206040808'/>
     </artifacts>
     <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
     <touchpointData size='1'>
       <instructions size='1'>
         <instruction key='manifest'>
-          Bundle-SymbolicName: tycho.demo.itp02&#xA;Bundle-Version: 1.0.0.202205301907&#xA;
+          Bundle-SymbolicName: tycho.demo.itp02&#xA;Bundle-Version: 1.0.0.202206040808&#xA;
         </instruction>
       </instructions>
     </touchpointData>

@@ -25,13 +25,24 @@
 	        <version>${tycho-version}</version>
 	        <configuration>
 	          <useUIHarness>true</useUIHarness>
+	          <dependencies>
+			  	<dependency>
+			       <groupId>tycho.demo.itp</groupId>
+			       <type>eclipse-feature</type>
+			       <artifactId>tycho.demo.itp.feature.test</artifactId>
+			       <!-- This is the minimum required version -->
+			       <version>1.0.0</version>
+				</dependency>
+			  </dependencies>
+			  <product>tycho.demo.itp.tests.product</product>
+              <application>org.eclipse.e4.ui.workbench.swt.E4Application</application>
 	          <includes>
 			      <include>*.AllTests</include>
 			  </includes>
 	        </configuration>
 	    </plugin>
 		
-		    <plugin>
+		 <plugin>
                 <groupId>org.eclipse.tycho</groupId>
                 <artifactId>target-platform-configuration</artifactId>
                 <configuration>
@@ -45,44 +56,8 @@
                         </extraRequirements>
                     </dependency-resolution>
                 </configuration>
-            </plugin>
- 		
-   <!--	<plugin>
-		    <groupId>org.eclipse.tycho</groupId>
-		    <artifactId>target-platform-configuration</artifactId>
-			<version>${tycho-version}</version>
-		    <configuration>
-		        <dependency-resolution>
-		            <extraRequirements>	
-		                <requirement>
-		                    <type>eclipse-plugin</type>
-		                    <id>tycho.demo.itp.application</id>
-		                    <versionRange>0.0.0</versionRange>
-		                </requirement>
-		                <requirement>
-		                    <type>eclipse-plugin</type>
-		                    <id>tycho.demo.itp02</id>
-		                    <versionRange>0.0.0</versionRange>
-		                </requirement> 
-		                 <requirement>
-		                    <type>eclipse-plugin</type>
-		                    <id>tycho.demo.itp.application.test</id>
-		                    <versionRange>0.0.0</versionRange>
-		                </requirement> 
-		                <requirement>
-		                    <type>eclipse-plugin</type>
-		                    <id>tycho.demo.itp02.test</id>
-		                    <versionRange>0.0.0</versionRange>
-		                </requirement>  
-		                <requirement>
-		                    <type>eclipse-plugin</type>
-		                    <id>tycho.demo.itp.tests</id>
-		                    <versionRange>0.0.0</versionRange>
-		                </requirement>
-		            </extraRequirements>
-		        </dependency-resolution>
-		    </configuration>
-		</plugin> -->
+            </plugin> 
+
     </plugins>
   </build>
 

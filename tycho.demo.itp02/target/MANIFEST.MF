@@ -3,7 +3,7 @@ Eclipse-ExtensibleAPI: true
 Bundle-ManifestVersion: 2
 Bundle-Name: Itp02
 Bundle-SymbolicName: tycho.demo.itp02
-Bundle-Version: 1.0.0.202205301907
+Bundle-Version: 1.0.0.202206040808
 Automatic-Module-Name: tycho.demo.itp02
 Bundle-RequiredExecutionEnvironment: JavaSE-11
 Export-Package: tycho.demo.itp02

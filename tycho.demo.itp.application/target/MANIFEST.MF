@@ -3,7 +3,7 @@ Eclipse-ExtensibleAPI: true
 Bundle-ManifestVersion: 2
 Bundle-Name: Itp Plug-in
 Bundle-SymbolicName: tycho.demo.itp.application;singleton:=true
-Bundle-Version: 1.0.0.202205301907
+Bundle-Version: 1.0.0.202206040808
 Require-Bundle: org.eclipse.core.runtime,org.eclipse.ui,org.eclipse.ui.i
  de,org.eclipse.jface
 Bundle-RequiredExecutionEnvironment: JavaSE-11
