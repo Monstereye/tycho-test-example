@@ -34,8 +34,7 @@
 			       <version>1.0.0</version>
 				</dependency>
 			  </dependencies>
-			  <product>tycho.demo.itp.tests.product</product>
-              <application>org.eclipse.e4.ui.workbench.swt.E4Application</application>
+			
 	          <includes>
 			      <include>*.AllTests</include>
 			  </includes>

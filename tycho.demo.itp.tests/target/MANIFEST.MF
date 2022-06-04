@@ -3,7 +3,7 @@ Eclipse-ExtensibleAPI: true
 Bundle-ManifestVersion: 2
 Bundle-Name: Tests Plug-in
 Bundle-SymbolicName: tycho.demo.itp.tests;singleton:=true
-Bundle-Version: 1.0.0.202206040808
+Bundle-Version: 1.0.0.202206040951
 Bundle-RequiredExecutionEnvironment: JavaSE-11
 Require-Bundle: org.eclipse.ui,org.junit;bundle-version="4.13.2",tycho.d
  emo.itp.application,tycho.demo.itp02
