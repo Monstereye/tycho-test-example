@@ -5,7 +5,9 @@ Bundle-SymbolicName: tycho.demo.itp02.test
 Bundle-Version: 1.0.0.qualifier
 Automatic-Module-Name: tycho.demo.itp01.test1
 Bundle-RequiredExecutionEnvironment: JavaSE-11
-Require-Bundle: org.junit
-Export-Package: tycho.demo.itp01.test2
+Require-Bundle: org.junit,
+ org.hamcrest;bundle-version="2.2.0",
+ tycho.demo.itp02
+Export-Package: tycho.demo.itp02
 Fragment-Host: tycho.demo.itp02
 Automatic-Module-Name: tycho.demo.itp02.test

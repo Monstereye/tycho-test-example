@@ -11,7 +11,7 @@ import org.junit.runners.Suite.SuiteClasses;
 
 
 @RunWith(Suite.class)
-@SuiteClasses({ITP01Test.class, tycho.demo.itp01.test1.AllTests.class, tycho.demo.itp01.test2.AllTests.class})
+@SuiteClasses({ITP01Test.class, tycho.demo.itp01.test1.AllTests.class, tycho.demo.itp02.AllTests.class})
 
 @SuppressWarnings({})
 public class AllTests {

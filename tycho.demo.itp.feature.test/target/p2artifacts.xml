@@ -1,10 +1,10 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <?artifactRepository version='1.1.0'?>
 <artifacts size='1'>
-  <artifact classifier='org.eclipse.update.feature' id='tycho.demo.itp.feature.test' version='1.0.0.202206040951'>
+  <artifact classifier='org.eclipse.update.feature' id='tycho.demo.itp.feature.test' version='1.0.0.202206091222'>
     <properties size='7'>
-      <property name='artifact.size' value='888'/>
-      <property name='download.size' value='888'/>
+      <property name='artifact.size' value='746'/>
+      <property name='download.size' value='746'/>
       <property name='maven-groupId' value='tycho.demo.itp'/>
       <property name='maven-artifactId' value='tycho.demo.itp.feature.test'/>
       <property name='maven-version' value='1.0.0-SNAPSHOT'/>

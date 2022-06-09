@@ -21,13 +21,13 @@ import tycho.demo.itp.Application;
 
 public class Test1 {
 
-    @Test
-    public void sampleAction() {
-      
-    	Application app = Mockito.mock(Application.class);
-     
-    	Assert.assertTrue(true);
-      
-    }
+	@Test
+	public void sampleAction() {
+
+		final Application app = Mockito.mock(Application.class);
+
+		Assert.assertTrue(true);
+
+	}
 
 }

@@ -2,12 +2,13 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: Test1
 Bundle-SymbolicName: tycho.demo.itp.application.test
-Bundle-Version: 1.0.0.202206040951
+Bundle-Version: 1.0.0.202206091222
 Automatic-Module-Name: tycho.demo.itp01.test1
 Bundle-RequiredExecutionEnvironment: JavaSE-11
-Require-Bundle: org.junit,org.mockito.mockito-core;bundle-version="4.4.0
- ",net.bytebuddy.byte-buddy;bundle-version="1.12.8",net.bytebuddy.byte-b
- uddy-agent;bundle-version="1.12.8"
+Require-Bundle: org.mockito.mockito-core;bundle-version="4.4.0",net.byte
+ buddy.byte-buddy;bundle-version="1.12.8",net.bytebuddy.byte-buddy-agent
+ ;bundle-version="1.12.8",org.hamcrest;bundle-version="2.2.0",org.junit,
+ org.objenesis
 Export-Package: tycho.demo.itp01.test1
 Fragment-Host: tycho.demo.itp.application
 

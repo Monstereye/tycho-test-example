@@ -1,0 +1,6 @@
+-------------------------------------------------------------------------------
+Test set: tycho.demo.itp02.Test2
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in tycho.demo.itp02.Test2
+testReturnTrue(tycho.demo.itp02.Test2)  Time elapsed: 0 s
+testReturnFalse(tycho.demo.itp02.Test2)  Time elapsed: 0 s

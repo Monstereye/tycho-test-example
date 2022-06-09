@@ -10,24 +10,27 @@
  * Contributors:
  *    Sonatype Inc. - initial API and implementation
  *******************************************************************************/
-package tycho.demo.itp01.tests;
 
-import static org.junit.Assert.assertTrue;
+package tycho.demo.itp02;
 
+import org.junit.Assert;
 import org.junit.Test;
 
-public class ITP01Test {
+import tycho.demo.itp02.MyClassInITP02;
+
+public class Test2 {
 
 	@Test
-	public void sampleAction() {
-//        IWorkbench workbench = PlatformUI.getWorkbench();
-//
-//        SampleAction action = new SampleAction();
-//        action.init(workbench.getActiveWorkbenchWindow());
-//
-// 		action.run(null);
-		assertTrue(true);
-//		MatcherAssert.assertThat(true, is(true));
+	public void testReturnTrue() {
+
+		// MatcherAssert.assertThat("reason", true);
+		final MyClassInITP02 classUnderTest = new MyClassInITP02();
+		Assert.assertTrue(classUnderTest.returnTrue());
 	}
 
+	@Test
+	public void testReturnFalse() {
+		final MyClassInITP02 classUnderTest = new MyClassInITP02();
+		Assert.assertFalse(classUnderTest.returnFalse());
+	}
 }

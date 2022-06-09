@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <units size='1'>
-  <unit id='tycho.demo.itp.application' version='1.0.0.202206040951' generation='2'>
-    <update id='tycho.demo.itp.application' range='[0.0.0,1.0.0.202206040951)' severity='0'/>
+  <unit id='tycho.demo.itp.application' version='1.0.0.202206091222' generation='2'>
+    <update id='tycho.demo.itp.application' range='[0.0.0,1.0.0.202206091222)' severity='0'/>
     <properties size='5'>
       <property name='org.eclipse.equinox.p2.name' value='Itp Plug-in'/>
       <property name='maven-groupId' value='tycho.demo.itp'/>
@@ -10,11 +10,11 @@
       <property name='maven-type' value='eclipse-plugin'/>
     </properties>
     <provides size='6'>
-      <provided namespace='org.eclipse.equinox.p2.iu' name='tycho.demo.itp.application' version='1.0.0.202206040951'/>
-      <provided namespace='osgi.bundle' name='tycho.demo.itp.application' version='1.0.0.202206040951'/>
+      <provided namespace='org.eclipse.equinox.p2.iu' name='tycho.demo.itp.application' version='1.0.0.202206091222'/>
+      <provided namespace='osgi.bundle' name='tycho.demo.itp.application' version='1.0.0.202206091222'/>
       <provided namespace='java.package' name='tycho.demo.itp' version='0.0.0'/>
       <provided namespace='java.package' name='tycho.demo.itp01.actions' version='0.0.0'/>
-      <provided namespace='osgi.identity' name='tycho.demo.itp.application' version='1.0.0.202206040951'>
+      <provided namespace='osgi.identity' name='tycho.demo.itp.application' version='1.0.0.202206091222'>
         <properties size='1'>
           <property name='type' value='osgi.bundle'/>
         </properties>
@@ -33,13 +33,13 @@
       </requiredProperties>
     </requires>
     <artifacts size='1'>
-      <artifact classifier='osgi.bundle' id='tycho.demo.itp.application' version='1.0.0.202206040951'/>
+      <artifact classifier='osgi.bundle' id='tycho.demo.itp.application' version='1.0.0.202206091222'/>
     </artifacts>
     <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
     <touchpointData size='1'>
       <instructions size='1'>
         <instruction key='manifest'>
-          Bundle-SymbolicName: tycho.demo.itp.application;singleton:=true&#xA;Bundle-Version: 1.0.0.202206040951&#xA;
+          Bundle-SymbolicName: tycho.demo.itp.application;singleton:=true&#xA;Bundle-Version: 1.0.0.202206091222&#xA;
         </instruction>
       </instructions>
     </touchpointData>

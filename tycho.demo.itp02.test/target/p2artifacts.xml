@@ -1,10 +1,10 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <?artifactRepository version='1.1.0'?>
 <artifacts size='1'>
-  <artifact classifier='osgi.bundle' id='tycho.demo.itp02.test' version='1.0.0.202206040951'>
+  <artifact classifier='osgi.bundle' id='tycho.demo.itp02.test' version='1.0.0.202206091222'>
     <properties size='6'>
-      <property name='artifact.size' value='5225'/>
-      <property name='download.size' value='5225'/>
+      <property name='artifact.size' value='5160'/>
+      <property name='download.size' value='5160'/>
       <property name='maven-groupId' value='tycho.demo.itp'/>
       <property name='maven-artifactId' value='tycho.demo.itp02.test'/>
       <property name='maven-version' value='1.0.0-SNAPSHOT'/>

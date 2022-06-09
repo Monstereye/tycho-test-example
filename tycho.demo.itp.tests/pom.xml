@@ -24,34 +24,73 @@
 	        <artifactId>tycho-surefire-plugin</artifactId>
 	        <version>${tycho-version}</version>
 	        <configuration>
-	          <useUIHarness>true</useUIHarness>
-	          <dependencies>
-			  	<dependency>
-			       <groupId>tycho.demo.itp</groupId>
-			       <type>eclipse-feature</type>
-			       <artifactId>tycho.demo.itp.feature.test</artifactId>
-			       <!-- This is the minimum required version -->
-			       <version>1.0.0</version>
-				</dependency>
-			  </dependencies>
-			
-	          <includes>
+	          <useUIHarness>false</useUIHarness>
+	          <failIfNoTests>false</failIfNoTests>
+              <providerHint>junit47</providerHint>
+              <includes>
 			      <include>*.AllTests</include>
 			  </includes>
-	        </configuration>
+			</configuration>
 	    </plugin>
 		
 		 <plugin>
                 <groupId>org.eclipse.tycho</groupId>
                 <artifactId>target-platform-configuration</artifactId>
                 <configuration>
+                	<filters>
+                    	<!--restrict version of a bundle --> 
+						<filter>
+							<type>eclipse-plugin</type> 
+							<id>org.hamcrest.core</id> 
+							<restrictTo>
+								<versionRange>[1.3.0, 1.3.1)</versionRange> <!-- alternative: <version> for selecting exactly one versions --> 
+							</restrictTo> 
+						</filter>
+						<filter>
+							<type>eclipse-plugin</type> 
+							<id>org.hamcrest.library</id> 
+							<removeAll/>
+						</filter>
+						<filter>
+							<type>eclipse-plugin</type> 
+							<id>org.junit</id> 
+							<restrictTo>
+								<versionRange>[4.13.0,4.14.0)</versionRange>
+							</restrictTo> 
+						</filter>		
+						<filter>
+							<type>eclipse-plugin</type> 
+							<id>org.jmock</id> 
+							<removeAll/>
+						</filter>
+						<filter>
+							<type>eclipse-plugin</type> 
+							<id>org.jmock.imposters</id> 
+							<removeAll/>
+						</filter>	
+						<filter>
+							<type>eclipse-plugin</type> 
+							<id>org.jmockjunit4</id> 
+							<removeAll/>
+						</filter>	
+						<filter>
+							<type>eclipse-plugin</type> 
+							<id>org.jmock.legacy</id> 
+							<removeAll/>
+						</filter>	
+						<filter>
+							<type>eclipse-plugin</type> 
+							<id>org.jmock.testjar</id> 
+							<removeAll/>
+						</filter>					
+                    </filters>
                     <dependency-resolution>
                         <extraRequirements>
                             <requirement>
                                 <type>eclipse-feature</type>
                                 <id>tycho.demo.itp.feature.test</id>
                                 <versionRange>0.0.0</versionRange>
-                            </requirement>
+                            </requirement>     
                         </extraRequirements>
                     </dependency-resolution>
                 </configuration>
@@ -60,29 +99,6 @@
     </plugins>
   </build>
 
-  <profiles>
-    <profile>
-      <id>osx</id>
-      <activation>
-        <os>
-          <family>mac</family>
-        </os>
-      </activation>
-      <build>
-        <pluginManagement>
-          <plugins>
-            <plugin>
-              <groupId>org.eclipse.tycho</groupId>
-              <artifactId>tycho-surefire-plugin</artifactId>
-              <version>${tycho-version}</version>
-              <configuration>
-                <argLine>-XstartOnFirstThread</argLine>
-              </configuration>
-            </plugin>
-          </plugins>
-        </pluginManagement>
-      </build>
-    </profile>
-  </profiles>
+  
 
 </project>
